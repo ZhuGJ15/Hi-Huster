@@ -1,0 +1,40 @@
+# spring配置
+spring:
+  application:
+    name: hi-huster
+  profiles:
+    active: dev
+  mvc:
+    converters:
+      preferred-json-mapper: jackson
+  # 邮件服务配置
+  mail:
+    host: smtp.163.com
+    port: 465
+    username: hust_hello@163.com
+    password: JFKWQMXDUWRGLNZL
+    protocol: smtps
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 15MB
+
+
+server:
+  port: 8090
+  max-http-header-size: 50000
+  servlet:
+    encoding:
+      charset: UTF-8
+
+logging:
+  config: classpath:log4j2.xml
+
+# mybatis配置
+mybatis:
+  # mapper加载路径
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+  # mybatis配置文件
+  config-location: classpath:mybatis-conf.xml
+
