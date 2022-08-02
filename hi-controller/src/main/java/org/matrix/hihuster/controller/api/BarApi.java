@@ -1,4 +1,4 @@
-package org.asherz.hi.controller.api;
+package org.matrix.hihuster.controller.api;
 
 /**
  * Copyright zhuganjun ©. All Rights Reserved.
@@ -7,5 +7,5 @@ package org.asherz.hi.controller.api;
  * @date: 2022/7/30 1:49
  * @description:
  */
-public interface UserApi {
+public interface BarApi {
 }
